@@ -220,11 +220,7 @@ int restoreBackupFile(NSString* plistPath)
 int main(int argc, const char **argv)
 {
   printf("\nINFO: CCCleaner will attempt to restore the stock Control Center system files!\n");
-
-  //Tell Cydia to respring after installation
-  int cydiaFd = (int)strtoul(getenv("CYDIA"), NULL, 10);
-  write(cydiaFd, "finish:reboot", 13);
-
+  
   if (geteuid() != 0)
   {
 		printf("ERROR: Not run as root.\n");
