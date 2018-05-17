@@ -220,7 +220,7 @@ int restoreBackupFile(NSString* plistPath)
 int main(int argc, const char **argv)
 {
   printf("\nINFO: CCCleaner will attempt to restore the stock Control Center system files!\n");
-  
+
   if (geteuid() != 0)
   {
 		printf("ERROR: Not run as root.\n");
@@ -297,7 +297,12 @@ int main(int argc, const char **argv)
 
   printf("INFO: Backups files are available at %s.\n", [BackupPath UTF8String]);
 
-  printf("INFO: Backup files will be removed when uninstalling this package.\n\n");
+  printf("INFO: Backup files will be removed when uninstalling this package.\n");
+
+  printf("INFO: PLEASE RESPRING YOUR DEVICE!!!\n");
+  printf("INFO: PLEASE RESPRING YOUR DEVICE!!!\n");
+  printf("INFO: PLEASE RESPRING YOUR DEVICE!!!\n");
+  //Couldn't get Cydia to show a respring button so this will have to do it
 
   return 0;
 }

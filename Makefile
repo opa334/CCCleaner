@@ -3,7 +3,7 @@ include $(THEOS)/makefiles/common.mk
 export TARGET = iphone:clang:11.2:11.0
 export ARCHS = arm64
 
-SUBPROJECTS = preinst postinst postrm
+SUBPROJECTS = postinst postrm
 
 include $(THEOS_MAKE_PATH)/tool.mk
 
