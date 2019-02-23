@@ -1,7 +1,7 @@
 Package: com.opa334.cccleaner
 Name: CCCleaner
 Depends: firmware (>=11.0)
-Version: 1.0
+Version: 1.1
 Architecture: iphoneos-arm
 Description: Cleans up modified CC system files!
 Depiction: https://opa334.github.io/depic/CCCleaner/index.html
